@@ -15,13 +15,14 @@ app.get('/about', function(req, res) {
 });
 
 app.post('/login', function(req, res) {
-    console.log(req.body); // This your request data
-
-    /*
-     * Write your auth logic here
-     */
-
-    res.send("This is auth route");
+    console.log(req.body);
+    users.forEach( (user) => {
+        if (user.login === req.body.login && user.password === req.body.password){
+            res.end("200 OK" + " " + user.name);
+        } else {
+            res.end("401 Unauthorized");
+        }
+    });
 });
 
 app.listen(3000, function() {

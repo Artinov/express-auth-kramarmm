@@ -1,0 +1,35 @@
+.wrapper {
+    margin-top: 100px;
+    margin-left:  calc(50% - 150px);
+    width: 300px;
+}
+
+input[placeholder="Password"] {
+    margin-top: -21px;
+    border-radius: 0 0 6px 6px;
+}
+
+input[placeholder="Login"] {
+    margin-top: 20px;
+    border-radius: 6px 6px 0 0;
+}
+
+#loginButton {
+    width: 300px;
+    padding: 10px 0;
+}
+
+.show {
+    display: block;
+}
+
+div[role="alert"] {
+    margin-top: 20px;
+    display: none;
+}
+
+
+.empty-value::-webkit-input-placeholder {color:#A94442;}
+.empty-value::-moz-placeholder          {color:#A94442;}/* Firefox 19+ */
+.empty-value:-moz-placeholder           {color:#A94442;}/* Firefox 18- */
+.empty-value:-ms-input-placeholder      {color:#A94442;}
